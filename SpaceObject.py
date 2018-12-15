@@ -102,10 +102,6 @@ class SpaceSprite(pygame.sprite.Sprite):
     def control(self, x, y): #sprite move values = spaceobject velocity
         self.movex+=x
         self.movey+=y
-
-    def rotate (img, rect, angle):
-        rotaImg = pygame.transform.rotate(img, angle)
-        rotaRect = rotaImg.get_rect(center = rect.center)
     
     def update (self, angle):
         self.image = pygame.transform.rotate(img, angle)
